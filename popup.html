@@ -4,17 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cronômetro</title>
-  <link rel="stylesheet" href="popup.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="cronometro-container">
-    <div id="timer-display">00:00:00</div>
-    <div id="controls">
-      <button id="btn-15">15</button>
-      <button id="btn-30">30</button>
-      <button id="btn-45">45</button>
-      <button id="btn-pause">||</button>
-      <button id="btn-reset">X</button>
+  <div id="cronometro">
+    <div id="tempo">00:00:00</div>
+    <div class="botoes">
+      <button data-minutos="10">10</button>
+      <button data-minutos="15">15</button>
+      <button data-minutos="30">30</button>
+      <button data-minutos="45">45</button>
+      <button id="pause">||</button>
+      <button id="reset">X</button>
     </div>
   </div>
   <script src="popup.js"></script>
