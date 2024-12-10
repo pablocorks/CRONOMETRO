@@ -1,39 +1,41 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: white;
-}
-
 #cronometro {
-  width: 100px;
-  height: 50px;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 2px solid black;
-  background: white;
-  position: fixed;
-  z-index: 9999;
 }
 
 #tempo {
-  font-size: 14px;
+  font-size: 32px; /* Tamanho maior para o cronômetro */
   font-weight: bold;
   text-align: center;
   background-color: green;
   color: white;
-  width: 90%;
-  margin-bottom: 5px;
+  width: 80%; /* Ajuste o tamanho do display */
+  height: 50px;
+  margin-bottom: 20px;
 }
 
-.botoes button {
-  margin: 2px;
-  padding: 5px;
-  font-size: 10px;
+.botoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: lightgray;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: gray;
+  color: white;
 }
