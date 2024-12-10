@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+}
+
+#cronometro {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  background: white;
+  position: fixed;
+  z-index: 9999;
+}
+
+#tempo {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  background-color: green;
+  color: white;
+  width: 90%;
+  margin-bottom: 5px;
+}
+
+.botoes button {
+  margin: 2px;
+  padding: 5px;
+  font-size: 10px;
+}
